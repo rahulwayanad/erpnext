@@ -1,4 +1,4 @@
-# Frappe-ERPNext Version-15 in Ubuntu 24.04 LTS
+# Frappe-ERPNext in Ubuntu 24.04 LTS
 A complete Guide to Install Frappe/ERPNext version 15  in Ubuntu 24.04 LTS
 
 
@@ -171,10 +171,7 @@ Open url http://pearl-erp.com:8000 to login
 
 ### STEP 15 install ERPNext latest version in bench & site
 
-    
-    bench get-app erpnext --branch version-15
-    ###OR
-    bench get-app https://github.com/frappe/erpnext --branch version-15
+    bench get-app https://github.com/frappe/erpnext
 
     bench --site pearl-erp.com install-app erpnext
     
