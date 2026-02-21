@@ -168,9 +168,9 @@ Now press (Ctrl-X) to exit
     
     bench new-site dcode.com
     
-    bench --site dcode.com add-to-hosts
+    bench --site pearl-erp.com add-to-hosts
 
-Open url http://dcode.com:8000 to login 
+Open url http://pearl-erp.com:8000 to login 
 
 
 ### STEP 15 install ERPNext latest version in bench & site
