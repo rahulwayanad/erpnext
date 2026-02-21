@@ -166,7 +166,7 @@ Now press (Ctrl-X) to exit
 >### Note 
 >Warning: MariaDB version ['10.11', '7'] is more than 10.8 which is not yet tested with Frappe Framework.
     
-    bench new-site dcode.com
+    bench new-site pearl-erp.com
     
     bench --site pearl-erp.com add-to-hosts
 
@@ -180,7 +180,7 @@ Open url http://pearl-erp.com:8000 to login
     ###OR
     bench get-app https://github.com/frappe/erpnext --branch version-15
 
-    bench --site dcode.com install-app erpnext
+    bench --site pearl-erp.com install-app erpnext
     
     bench start
     
