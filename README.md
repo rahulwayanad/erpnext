@@ -171,11 +171,12 @@ Open url http://pearl-erp.com:8000 to login
 
 ### STEP 15 install ERPNext latest version in bench & site
 
-    bench get-app https://github.com/frappe/erpnext
 
-    bench --site pearl-erp.com install-app erpnext
-    
-    bench start
+bench get-app https://github.com/frappe/erpnext --branch version-15
+
+bench --site pearl-erp.com install-app erpnext
+
+bench start
     
     
 
