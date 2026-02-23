@@ -1,0 +1,41 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+{% if doc.image %}
+
+![{{ doc.article_name }}]({{ doc.image }})
+
+{% endif %}
+
+
+{{ doc.article_name }}
+===========
+
+
+By {{ doc.auther }}
+
+
+
+ 
+ {%- if doc.status == 'Available' -%}
+ 
+ Available
+ {%- elif doc.status == 'Issued' -%}
+ 
+ Issued
+ 
+ {%- endif -%}
+ 
+ 
+
+Publisher: **{{ doc.publisher }}**
+ISBN: **{{ doc.isbn }}**
+
+{{ doc.description }}
+
+
+
+
+
+{% endblock %}

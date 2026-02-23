@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:article_name",
+ "creation": "2026-02-23 06:04:06.311125",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "article_name",
+  "image",
+  "auther",
+  "column_break_cdhx",
+  "isbn",
+  "status",
+  "publisher",
+  "section_break_pbdp",
+  "description",
+  "tab_2_tab",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "article_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Article Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "auther",
+   "fieldtype": "Data",
+   "label": "Auther"
+  },
+  {
+   "fieldname": "column_break_cdhx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Issued\nAvailable"
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Publisher"
+  },
+  {
+   "fieldname": "section_break_pbdp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  }
+ ],
+ "grid_page_length": 50,
+ "has_web_view": 1,
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2026-02-23 07:12:07.939972",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Article",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Member",
+   "share": 1
+  }
+ ],
+ "route": "articles",
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
