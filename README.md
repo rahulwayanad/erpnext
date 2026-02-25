@@ -1,17 +1,16 @@
-# Frappe-ERPNext in Ubuntu 24.04 LTS
+# Frappe-ERPNext-16 in Ubuntu 24.04 LTS
 A complete Guide to Install Frappe/ERPNext version 15  in Ubuntu 24.04 LTS
 
 
 ### Pre-requisites 
 
-      Python 3.11+                                  (python 3.12 is inbuilt in 24.04 LTS)
-      Node.js 18+
-      
-      Redis 5                                       (caching and real time updates)
-      MariaDB 10.3.x / Postgres 9.5.x               (to run database driven apps)
+      Python 3.14+                                  (python 3.12 is inbuilt in 24.04 LTS)
+      Node.js 24+
+      Redis 7                                       (caching and real time updates)
+      MariaDB 12.2.x / Postgres 9.5.x               (to run database driven apps)
       yarn 1.12+                                    (js dependency manager)
-      pip 20+                                       (py dependency manager)
-      wkhtmltopdf (version 0.12.5 with patched qt)  (for pdf generation)
+      pip 26+                                      (py dependency manager)
+      wkhtmltopdf (version 0.12.6 with patched qt)  (for pdf generation)
       cron                                          (bench's scheduled jobs: automated certificate renewal, scheduled backups)
       NGINX                                         (proxying multitenant sites in production)
 
@@ -34,7 +33,7 @@ A complete Guide to Install Frappe/ERPNext version 15  in Ubuntu 24.04 LTS
 
 ### STEP 4 Install virtualenv
     
-    sudo apt install python3.12-venv
+    sudo apt install python3.14-venv
     
 
 ### STEP 5 Install MariaDB
@@ -152,7 +151,7 @@ Now press (Ctrl-X) to exit
     
 ### STEP 13 initilise the frappe bench & install frappe latest version 
 
-    bench init frappe-bench --frappe-branch version-15
+    bench init frappe-bench --frappe-branch version-16
     
     cd frappe-bench/
     bench start
@@ -172,7 +171,7 @@ Open url http://pearl-erp.com:8000 to login
 ### STEP 15 install ERPNext latest version in bench & site
 
 
-bench get-app https://github.com/frappe/erpnext --branch version-15
+bench get-app https://github.com/frappe/erpnext --branch version-16
 
 bench --site pearl-erp.com install-app erpnext
 
